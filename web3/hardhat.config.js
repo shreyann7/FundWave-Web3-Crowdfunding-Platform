@@ -33,6 +33,14 @@ module.exports = {
   },
   solidity: {
     version: "0.8.17",
+    defaultNetwork: 'sepolia',
+    networks: {
+      hardhat : {},
+      sepolia: {
+        url : 'https://rpc.ankr.com/eth_sepolia' , // sepolia network rpc
+        accounts: [`0x${process.env.PRIVATE_KEY}`]// account from which smart contract will be deployed
+      }
+    },
     settings: {
       optimizer: {
         enabled: true,
