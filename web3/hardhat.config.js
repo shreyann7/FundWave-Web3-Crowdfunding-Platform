@@ -37,8 +37,8 @@ module.exports = {
     networks: {
       hardhat : {},
       sepolia: {
-        url : 'https://rpc.ankr.com/eth_sepolia' , // sepolia network rpc
-        accounts: [`0x${process.env.PRIVATE_KEY}`]// account from which smart contract will be deployed
+        url : 'https://sepolia.rpc.thirdweb.com' , // sepolia network rpc
+        accounts: [`0x${process.env.PRIVATE_KEY}`],// account from which smart contract will be deployed
       }
     },
     settings: {
